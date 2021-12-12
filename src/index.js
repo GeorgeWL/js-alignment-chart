@@ -8,3 +8,11 @@ import "./styles.css";
 //   <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
 // </div>
 // `;
+const inputsArray = Array.from(document.querySelectorAll("input[type=file]"));
+console.log(inputsArray);
+function updateImageForInput({ target: { id } }) {
+  console.log({ id });
+}
+inputsArray.forEach((input) =>
+  input.addEventListener("change", updateImageForInput)
+);
