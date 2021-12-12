@@ -18,6 +18,16 @@ body {
   grid-row-gap: 10px;
   margin: 10px auto;
 }
+header,
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  margin: 0 5px;
+}
 .card {
   width: 100%;
   display: flex;
